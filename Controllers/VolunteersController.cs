@@ -10,11 +10,13 @@ using BridgeHospiceApi.Models;
 using BridgeHospiceApi.Services;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 
 namespace BridgeHospiceApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("Origins")]
     public class VolunteersController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

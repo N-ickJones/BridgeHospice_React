@@ -40,6 +40,10 @@ namespace BridgeHospiceApi
                             "https://www.bridge-hospice.com",
                             "http://bridge-hospice.com",
                             "https://bridge-hospice.com",
+                            "http://www.myvenv.club",
+                            "https://www.myvenv.club",
+                            "http://myvenv.club",
+                            "https://myvenv.club",
                             "http://localhost:5000",
                             "https://localhost:5001"
                         )
