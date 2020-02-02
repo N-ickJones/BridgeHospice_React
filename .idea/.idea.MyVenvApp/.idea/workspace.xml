@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d161a0b8-b157-495b-abd4-2863c63f77d8" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyVenvApi.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Controllers/AccountController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding>
+                <marker date="1577612097322" expanded="false" signature="6:559" ph="..." />
+                <marker date="1577612097322" expanded="true" signature="591:28784" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="720:28782" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="1282:1533" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="1745:3800" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="1771:3516" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="2615:3257" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="2768:2950" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="2975:3239" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="3278:3502" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="3549:3790" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="3810:3976" ph="/// Accepts Email Verification Returns Redirect b.c. email comes directly to server ... " />
+                <marker date="1577612097322" expanded="true" signature="4118:5600" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="4144:5384" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="4210:4416" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="4533:4734" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="4947:5142" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="5163:5370" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="5416:5590" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="5791:8888" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="5864:8513" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="6247:8268" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="6373:6646" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="6831:7251" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="6878:7076" ph="/* _signInManager.SignInAsync() ... */" />
+                <marker date="1577612097322" expanded="true" signature="7306:7500" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="7549:7734" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="7784:8005" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="8030:8250" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="8289:8499" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="8546:8878" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="9049:9216" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="9441:11262" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="9467:10883" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="9624:9877" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="9914:10034" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="10137:10325" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="10404:10606" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="10627:10869" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="10916:11252" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="11272:11438" ph="/// Accepts Email Verification Returns Redirect b.c. email comes directly to server ... " />
+                <marker date="1577612097322" expanded="true" signature="11595:12833" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="11621:12581" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="11687:11906" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="12023:12237" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="12614:12823" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="13056:14305" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="13082:13917" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="13206:13437" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="13667:13854" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="13950:14295" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="14323:14908" ph="/* POST: /Account/ExternalLogin ... */" />
+                <marker date="1577612097322" expanded="true" signature="14918:16896" ph="/* GET: /Account/ExternalLoginCallback ... */" />
+                <marker date="1577612097322" expanded="true" signature="16906:18510" ph="/* POST: /Account/ExternalLoginConfirmation ... */" />
+                <marker date="1577612097322" expanded="true" signature="18520:19261" ph="/* GET: /Account/SendCode ... */" />
+                <marker date="1577612097322" expanded="true" signature="19271:20794" ph="/* POST: /Account/SendCode ... */" />
+                <marker date="1577612097322" expanded="true" signature="20804:21438" ph="/* GET: /Account/VerifyCode ... */" />
+                <marker date="1577612097322" expanded="true" signature="21448:22634" ph="/* POST: /Account/VerifyCode ... */" />
+                <marker date="1577612097322" expanded="true" signature="22644:23279" ph="/* GET: /Account/VerifyAuthenticatorCode ... */" />
+                <marker date="1577612097322" expanded="true" signature="23289:24511" ph="/* POST: /Account/VerifyAuthenticatorCode ... */" />
+                <marker date="1577612097322" expanded="true" signature="24521:25090" ph="/* GET: /Account/UseRecoveryCode ... */" />
+                <marker date="1577612097322" expanded="true" signature="25100:25821" ph="/* POST: /Account/UseRecoveryCode ... */" />
+                <marker date="1577612097322" expanded="true" signature="25895:26806" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="27033:27862" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="27895:28119" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="28155:28475" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="28506:28570" ph="{...}" />
+                <marker date="1577612097322" expanded="true" signature="28611:28775" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1861" />
+    <option name="y" value="100" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MyVenvApp" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MyVenvApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MyVenvApi" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MyVenvApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MyVenvApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.MyVenvApi: IIS Express">
+    <configuration name="MyVenvApi: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MyVenvApi.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyVenvApi: MyWebApi" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MyVenvApi.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="MyWebApi" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d161a0b8-b157-495b-abd4-2863c63f77d8" name="Default Changelist" comment="" />
+      <created>1577612155348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577612155348</updated>
+      <workItem from="1577612159724" duration="103000" />
+      <workItem from="1577612406751" duration="411000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="514000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25253063" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Build" sideWeight="0.49866807" weight="0.32977587" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" sideWeight="0.49866807" weight="0.32977587" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" sideWeight="0.49973363" weight="0.32977587" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49973363" weight="0.32977587" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49973363" weight="0.32977587" />
+      <window_info anchor="bottom" id="REST Client" order="13" sideWeight="0.49973363" weight="0.32977587" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49973363" visible="true" weight="0.32977587" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5002664" side_tool="true" visible="true" weight="0.32977587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MyVenvApi.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/AccountController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <marker date="1577612097322" expanded="false" signature="6:559" ph="..." />
+            <marker date="1577612097322" expanded="true" signature="591:28784" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="720:28782" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="1282:1533" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="1745:3800" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="1771:3516" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="2615:3257" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="2768:2950" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="2975:3239" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="3278:3502" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="3549:3790" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="3810:3976" ph="/// Accepts Email Verification Returns Redirect b.c. email comes directly to server ... " />
+            <marker date="1577612097322" expanded="true" signature="4118:5600" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="4144:5384" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="4210:4416" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="4533:4734" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="4947:5142" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="5163:5370" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="5416:5590" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="5791:8888" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="5864:8513" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="6247:8268" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="6373:6646" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="6831:7251" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="6878:7076" ph="/* _signInManager.SignInAsync() ... */" />
+            <marker date="1577612097322" expanded="true" signature="7306:7500" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="7549:7734" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="7784:8005" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="8030:8250" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="8289:8499" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="8546:8878" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="9049:9216" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="9441:11262" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="9467:10883" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="9624:9877" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="9914:10034" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="10137:10325" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="10404:10606" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="10627:10869" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="10916:11252" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="11272:11438" ph="/// Accepts Email Verification Returns Redirect b.c. email comes directly to server ... " />
+            <marker date="1577612097322" expanded="true" signature="11595:12833" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="11621:12581" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="11687:11906" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="12023:12237" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="12614:12823" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="13056:14305" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="13082:13917" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="13206:13437" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="13667:13854" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="13950:14295" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="14323:14908" ph="/* POST: /Account/ExternalLogin ... */" />
+            <marker date="1577612097322" expanded="true" signature="14918:16896" ph="/* GET: /Account/ExternalLoginCallback ... */" />
+            <marker date="1577612097322" expanded="true" signature="16906:18510" ph="/* POST: /Account/ExternalLoginConfirmation ... */" />
+            <marker date="1577612097322" expanded="true" signature="18520:19261" ph="/* GET: /Account/SendCode ... */" />
+            <marker date="1577612097322" expanded="true" signature="19271:20794" ph="/* POST: /Account/SendCode ... */" />
+            <marker date="1577612097322" expanded="true" signature="20804:21438" ph="/* GET: /Account/VerifyCode ... */" />
+            <marker date="1577612097322" expanded="true" signature="21448:22634" ph="/* POST: /Account/VerifyCode ... */" />
+            <marker date="1577612097322" expanded="true" signature="22644:23279" ph="/* GET: /Account/VerifyAuthenticatorCode ... */" />
+            <marker date="1577612097322" expanded="true" signature="23289:24511" ph="/* POST: /Account/VerifyAuthenticatorCode ... */" />
+            <marker date="1577612097322" expanded="true" signature="24521:25090" ph="/* GET: /Account/UseRecoveryCode ... */" />
+            <marker date="1577612097322" expanded="true" signature="25100:25821" ph="/* POST: /Account/UseRecoveryCode ... */" />
+            <marker date="1577612097322" expanded="true" signature="25895:26806" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="27033:27862" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="27895:28119" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="28155:28475" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="28506:28570" ph="{...}" />
+            <marker date="1577612097322" expanded="true" signature="28611:28775" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

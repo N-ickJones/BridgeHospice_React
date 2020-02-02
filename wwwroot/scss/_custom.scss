@@ -1,0 +1,19 @@
+
+
+//@import '_settings.scss';
+//@import '_base.scss';
+//@import './components/_header.scss';
+
+/* import only the Bootstrap files needed for customizations */
+//@import "node_modules/bootstrap/scss/functions";
+//@import "node_modules/bootstrap/scss/variables";
+
+/* make the customizations */
+$theme-colors: (
+    "primary": #11a781,
+    //"primary": #fd8546, 
+    //"secondary": #002856,
+);
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap"

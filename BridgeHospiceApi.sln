@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeHospiceApi", "BridgeHospiceApi.csproj", "{6BF1490D-4ACF-4170-A740-22398F3C52EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BF1490D-4ACF-4170-A740-22398F3C52EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF1490D-4ACF-4170-A740-22398F3C52EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF1490D-4ACF-4170-A740-22398F3C52EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF1490D-4ACF-4170-A740-22398F3C52EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C91731D5-9AD0-4412-8E4D-4423E281E740}
+	EndGlobalSection
+EndGlobal

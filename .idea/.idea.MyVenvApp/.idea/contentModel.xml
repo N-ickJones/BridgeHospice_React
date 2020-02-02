@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\armyj\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\armyj\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_MyVenvApp.-1666179001.00" t="ExcludeRecursive" />
+    <e p="C:\Users\armyj\Documents\GitHub\MyVenvApp" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="ClientApp" t="Include">
+        <e p=".gitignore" t="Include" />
+        <e p="node_modules\@babel\parser" t="IncludeRecursive" />
+        <e p="node_modules\@babel\types" t="IncludeRecursive" />
+        <e p="node_modules\@fortawesome\fontawesome-svg-core" t="IncludeRecursive" />
+        <e p="node_modules\@fortawesome\free-solid-svg-icons" t="IncludeRecursive" />
+        <e p="node_modules\@fortawesome\react-fontawesome" t="IncludeRecursive" />
+        <e p="node_modules\@testing-library\jest-dom" t="IncludeRecursive" />
+        <e p="node_modules\@testing-library\react" t="IncludeRecursive" />
+        <e p="node_modules\@testing-library\user-event" t="IncludeRecursive" />
+        <e p="node_modules\@types" t="IncludeRecursive">
+          <e p="babel__generator" t="IncludeRecursive" />
+          <e p="babel__template" t="IncludeRecursive" />
+          <e p="babel__traverse" t="IncludeRecursive" />
+          <e p="events" t="IncludeRecursive" />
+          <e p="istanbul-lib-coverage" t="IncludeRecursive" />
+          <e p="istanbul-lib-report" t="IncludeRecursive" />
+          <e p="minimatch" t="IncludeRecursive" />
+          <e p="node" t="IncludeRecursive" />
+          <e p="prop-types" t="IncludeRecursive" />
+          <e p="react" t="IncludeRecursive" />
+          <e p="react-dom" t="IncludeRecursive" />
+          <e p="testing-library__dom" t="IncludeRecursive" />
+          <e p="yargs-parser" t="IncludeRecursive" />
+        </e>
+        <e p="node_modules\bootstrap" t="IncludeRecursive" />
+        <e p="node_modules\csstype" t="IncludeRecursive" />
+        <e p="node_modules\googleapis" t="IncludeRecursive" />
+        <e p="node_modules\jquery" t="IncludeRecursive" />
+        <e p="node_modules\js-cookie" t="IncludeRecursive" />
+        <e p="node_modules\merge" t="IncludeRecursive" />
+        <e p="node_modules\oidc-client" t="IncludeRecursive" />
+        <e p="node_modules\pretty-format" t="IncludeRecursive" />
+        <e p="node_modules\react" t="IncludeRecursive" />
+        <e p="node_modules\react-bootstrap" t="IncludeRecursive" />
+        <e p="node_modules\react-dom" t="IncludeRecursive" />
+        <e p="node_modules\react-hook-form" t="IncludeRecursive" />
+        <e p="node_modules\react-router-dom" t="IncludeRecursive" />
+        <e p="node_modules\react-scripts" t="IncludeRecursive" />
+        <e p="node_modules\reactstrap" t="IncludeRecursive" />
+        <e p="node_modules\rimraf" t="IncludeRecursive" />
+        <e p="package-lock.json" t="Include" />
+        <e p="package.json" t="Include" />
+        <e p="public" t="Include">
+          <e p="favicon.ico" t="Include" />
+          <e p="index.html" t="Include" />
+          <e p="logo192.png" t="Include" />
+          <e p="logo512.png" t="Include" />
+          <e p="manifest.json" t="Include" />
+          <e p="robots.txt" t="Include" />
+        </e>
+        <e p="README.md" t="Include" />
+        <e p="src" t="Include">
+          <e p=".env" t="Include" />
+          <e p="Account" t="Include">
+            <e p="Account.js" t="Include" />
+            <e p="ConfirmEmail.js" t="Include" />
+            <e p="Index.js" t="Include" />
+            <e p="PasswordRecovery.js" t="Include" />
+            <e p="PasswordResetForm.js" t="Include" />
+          </e>
+          <e p="App.css" t="Include" />
+          <e p="App.js" t="Include" />
+          <e p="components" t="Include">
+            <e p="Api_Connection.js" t="Include" />
+            <e p="MyAbout.js" t="Include" />
+            <e p="MyCart.js" t="Include" />
+            <e p="MyContact.js" t="Include" />
+            <e p="MyDashBoard.js" t="Include" />
+            <e p="MyHelp.js" t="Include" />
+            <e p="MyHome.js" t="Include" />
+            <e p="MyNavbar.js" t="Include" />
+            <e p="MyPortfolios.js" t="Include" />
+            <e p="MyPricing.js" t="Include" />
+            <e p="MySearch.js" t="Include" />
+            <e p="MyTemplates.js" t="Include" />
+            <e p="MyUtils.js" t="Include" />
+          </e>
+          <e p="Index.js" t="Include" />
+          <e p="serviceWorker.js" t="Include" />
+          <e p="tests" t="Include">
+            <e p="ApiTester.js" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Controllers" t="Include">
+        <e p="AccountController.cs" t="Include" />
+        <e p="Infrastructure" t="Include">
+          <e p="Api_connection.cs" t="Include" />
+        </e>
+        <e p="TemplatesController.cs" t="Include" />
+      </e>
+      <e p="Data" t="Include">
+        <e p="ApplicationDbContext.cs" t="Include" />
+        <e p="logger.cs" t="Include" />
+        <e p="output.txt" t="Include" />
+      </e>
+      <e p="Filters" t="Include">
+        <e p="ApiKeyAuthAttribute.cs" t="Include" />
+      </e>
+      <e p="Migrations" t="Include">
+        <e p="20191226004920_init.cs" t="Include" />
+        <e p="20191226004920_init.Designer.cs" t="Include" />
+        <e p="20191227032124_test.cs" t="Include" />
+        <e p="20191227032124_test.Designer.cs" t="Include" />
+        <e p="20191228050250_uniqueemail.cs" t="Include" />
+        <e p="20191228050250_uniqueemail.Designer.cs" t="Include" />
+        <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+      </e>
+      <e p="Misc" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="startDotnet.bat" t="Include" />
+          <e p="startPostgres.bat" t="Include" />
+          <e p="startReact.bat" t="Include" />
+        </e>
+      </e>
+      <e p="Models" t="Include">
+        <e p="ApplicationUser.cs" t="Include" />
+        <e p="Templates.cs" t="Include" />
+      </e>
+      <e p="MyVenvApi.csproj" t="IncludeRecursive" />
+      <e p="MyVenvApp.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="MyVenvApi.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="README.md" t="Include" />
+      <e p="Services" t="Include">
+        <e p="IEmailSender.cs" t="Include" />
+        <e p="ISmsSender.cs" t="Include" />
+        <e p="MessageServices.cs" t="Include" />
+      </e>
+      <e p="Startup.cs" t="Include" />
+    </e>
+  </component>
+</project>
