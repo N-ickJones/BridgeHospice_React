@@ -16,24 +16,22 @@ namespace BridgeHospiceApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("Origins")]
     public class VolunteersController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
         private readonly IEmailSender _emailSender;
-        private readonly ISmsSender _smsSender;
-        private readonly ILogger _logger;
+        //private readonly ISmsSender _smsSender;
+        //private readonly ILogger _logger;
 
         public VolunteersController(ApplicationDbContext context, IEmailSender emailSender, ISmsSender smsSender, ILoggerFactory loggerFactory)
         {
             _context = context;
             _emailSender = emailSender;
-            _smsSender = smsSender;
-            _logger = loggerFactory.CreateLogger<AccountController>();
+            //_smsSender = smsSender;
+            //_logger = loggerFactory.CreateLogger<VolunteersController>();
         }
 
         // GET: api/Volunteers
-        [Authorize]
         [HttpGet]
         private async Task<ActionResult<IEnumerable<Volunteer>>> GetTemplates()
         {
@@ -41,7 +39,6 @@ namespace BridgeHospiceApi.Controllers
         }
 
         // GET: api/Volunteers/5
-        [Authorize]
         [HttpGet("{id}")]
         private async Task<ActionResult<Volunteer>> GetVolunteer(int id)
         {
@@ -56,7 +53,6 @@ namespace BridgeHospiceApi.Controllers
         }
 
         // PUT: api/Volunteers/5
-        [Authorize]
         [HttpPut("{id}")]
         private async Task<IActionResult> PutVolunteer(int id, Volunteer volunteer)
         {
@@ -102,7 +98,8 @@ namespace BridgeHospiceApi.Controllers
 
             await _emailSender.SendEmailAsync(appUser, "Your volunteer application was submitted", 
                 $"Hello {volunteer.FirstName} {volunteer.LastName},<br><br>" +
-                $"Your volunteer application was submitted. Please allow 3-5 business days for our staff to process your request.<br>" +
+                $"Your volunteer application was submitted.<br><br>" +
+                $"Please allow 3-5 business days for our staff to process your request.<br>" +
                 $"Our office hours are 9:00am to 5:00pm Monday through Friday.<br>" +
                 $"For further assistance contact us at (806) 993-3900 or support@bridge-hospice.com"
             );
@@ -111,7 +108,6 @@ namespace BridgeHospiceApi.Controllers
         }
 
         // DELETE: api/Volunteers/5
-        [Authorize]
         [HttpDelete("{id}")]
         private async Task<ActionResult<Volunteer>> DeleteVolunteer(int id)
         {

@@ -25,46 +25,24 @@ namespace BridgeHospiceApi
         public IConfiguration Configuration { get; }
 
         private readonly string Origins = "Origins";
+        private readonly bool local = false;
 
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("PgSqlConnection")));
-            
-            services.AddCors(options =>
-            {
-                options.AddPolicy(Origins, builder =>
-                {
-                    builder.AllowCredentials()
-                        .WithOrigins(
-                            "http://www.bridge-hospice.com",
-                            "https://www.bridge-hospice.com",
-                            "http://bridge-hospice.com",
-                            "https://bridge-hospice.com",
-                            "http://www.myvenv.club",
-                            "https://www.myvenv.club",
-                            "http://myvenv.club",
-                            "https://myvenv.club",
-                            "http://localhost:5000",
-                            "https://localhost:5001"
-                        )
-                        .AllowAnyHeader()
-                        .AllowAnyMethod();
-                });
-            });
-            
-            /*
+
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             
-            services.AddIdentityServer()
+            services.AddIdentityServer(options => options.PublicOrigin = local ? "https://localhost:5001": "https://research.myvenv.club")
                 .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
 
             services.AddAuthentication()
                 .AddIdentityServerJwt();
-            */
+
             services.AddControllersWithViews();
             services.AddRazorPages();
-            /*
+
             services.Configure<IdentityOptions>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = true;
@@ -78,30 +56,30 @@ namespace BridgeHospiceApi
                 options.Password.RequiredLength = 8;
                 options.Password.RequiredUniqueChars = 1;
 
-                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1);
-                options.Lockout.MaxFailedAccessAttempts = 10;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+                options.Lockout.MaxFailedAccessAttempts = 5;
                 options.Lockout.AllowedForNewUsers = true;
 
-                options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._+";
+                options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._+@";
                 options.User.RequireUniqueEmail = true;
             });
 
             services.ConfigureApplicationCookie(options =>
             {
                 options.Cookie.HttpOnly = true;
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(10);
                 options.LoginPath = "/Identity/Account/Login";
                 options.LogoutPath = "/Identity/Account/Logout";
                 options.AccessDeniedPath = "/Identity/Account/AccessDenied";
                 options.SlidingExpiration = true;
             });
-            */
+
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
 
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = @"../BridgeHospice/build";
+                configuration.RootPath = "ClientApp/build";
             });
         }
 
@@ -125,10 +103,11 @@ namespace BridgeHospiceApi
 
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
+
             app.UseRouting();
-            app.UseCors(Origins);
+
             app.UseAuthentication();
-            //app.UseIdentityServer();
+            app.UseIdentityServer();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -141,7 +120,7 @@ namespace BridgeHospiceApi
 
             app.UseSpa(spa =>
             {
-                spa.Options.SourcePath = "../BridgeHospice";
+                spa.Options.SourcePath = "ClientApp";
                 if (env.IsDevelopment())
                 {
                     spa.UseProxyToSpaDevelopmentServer("http://localhost:3000");
@@ -151,3 +130,27 @@ namespace BridgeHospiceApi
         }
     }
 }
+
+/*
+            services.AddCors(options =>
+            {
+                options.AddPolicy(Origins, builder =>
+                {
+                    builder.AllowCredentials()
+                        .WithOrigins(
+                            "http://www.bridge-hospice.com",
+                            "https://www.bridge-hospice.com",
+                            "http://bridge-hospice.com",
+                            "https://bridge-hospice.com",
+                            "http://www.myvenv.club",
+                            "https://www.myvenv.club",
+                            "http://myvenv.club",
+                            "https://myvenv.club",
+                            "http://localhost:5000",
+                            "https://localhost:5001"
+                        )
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+            */

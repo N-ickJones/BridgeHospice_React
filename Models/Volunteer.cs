@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BridgeHospiceApi.Models
 {
@@ -14,5 +11,8 @@ namespace BridgeHospiceApi.Models
         public string PhoneNumber { get; set; }
         public string City { get; set; }
         public string Zip { get; set; }
+        public DateTime SubmitDate { get; set; }
+        public DateTime OpenDate { get; set; }
+        public DateTime CompleteDate { get; set; }
     }
 }
