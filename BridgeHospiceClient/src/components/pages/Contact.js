@@ -14,7 +14,7 @@ export default function Contact() {
           <br/>
 
           <h4>Phone: <a href="tel:+8069333900">(806) 993-3900</a></h4>
-          <h4>Fax: &nbsp;&nbsp;&nbsp;&nbsp;(806) 993-3900</h4>
+          <h4>Fax: &nbsp;&nbsp;&nbsp;&nbsp;(806) 993-3899</h4>
           <h4>Email: <a href="mailto:support@bridge-hospice.com">support@bridge-hospice.com</a></h4>
           <br/>
 
@@ -28,7 +28,7 @@ export default function Contact() {
           <br/>
 
           <h3>Website Related Inquiries</h3>
-          <h4>Email: <a href="mailto:webmaster@bridge-hospice.com">webmaster@bridge-hospice.com</a></h4>
+          <h4>Email: <a href="mailto:webmaster@bridge-hospice.com">webservices@bridge-hospice.com</a></h4>
         </div>
         {/*
         <div className="col-12 col-lg d-flex align-items-center p-3">

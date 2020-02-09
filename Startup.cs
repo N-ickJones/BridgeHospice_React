@@ -17,15 +17,14 @@ namespace BridgeHospiceApi
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration _config, IWebHostEnvironment _env)
         {
-            Configuration = configuration;
+            Configuration = _config;
+            Environment = _env;
         }
 
         public IConfiguration Configuration { get; }
-
-        private readonly string Origins = "Origins";
-        private readonly bool local = false;
+        private IWebHostEnvironment Environment { get; set; }
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -34,7 +33,8 @@ namespace BridgeHospiceApi
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             
-            services.AddIdentityServer(options => options.PublicOrigin = local ? "https://localhost:5001": "https://research.myvenv.club")
+            services.AddIdentityServer(options => options.PublicOrigin = 
+                Environment.IsDevelopment() ? "https://localhost:5001" : "https://research.myvenv.club")
                 .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
 
             services.AddAuthentication()
@@ -79,13 +79,13 @@ namespace BridgeHospiceApi
 
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/build";
+                configuration.RootPath = "BridgeHospiceClient/build";
             });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
-            if (env.IsDevelopment())
+            if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
@@ -120,8 +120,8 @@ namespace BridgeHospiceApi
 
             app.UseSpa(spa =>
             {
-                spa.Options.SourcePath = "ClientApp";
-                if (env.IsDevelopment())
+                spa.Options.SourcePath = "BridgeHospiceClient";
+                if (Environment.IsDevelopment())
                 {
                     spa.UseProxyToSpaDevelopmentServer("http://localhost:3000");
                 }

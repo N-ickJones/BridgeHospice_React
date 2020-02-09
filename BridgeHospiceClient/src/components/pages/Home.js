@@ -56,13 +56,13 @@ export default function Home() {
 
         <div className="bg-purple nav-box d-flex p-3 text-light">
           <div className="row m-auto w-100 py-3">
-              <div className="col-12 col-md-6 text-center my-auto pb-2" style={{lineHeight: 1.0}}>
+              <div className="col-12 col-md-4 col-lg-5 text-center my-auto pb-2" style={{lineHeight: 1.0}}>
                 <div style={{fontSize: "70px", fontWeight: "500"}}>5</div>
                 <div style={{fontSize: "35px", fontWeight: "500"}}>REASONS</div>
                 <div style={{fontSize: "35px", fontWeight: "500"}}>FOR CHOOSING</div>
                 <div style={{fontSize: "35px", fontWeight: "500"}}>HOSPICE</div>
               </div>
-              <div className="col-12 col-md-6">
+              <div className="col-12 col-md-8 col-lg-7">
                 <ol className="pt-1" style={{lineHeight: 1.8, fontSize: "20px"}}>
                   <li>Medicare pays for all hospice services.</li>
                   <li>Hospice can improve your quality of life.</li>
