@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function PrivacyPolicy() {
     return (
-        <div className="container shadow pb-3">
+        <div className="container shadow">
             <div style={{height: 10}}></div>
-            <h1 className="text-center bg-primary text-dark py-4">Privacy Policy of Bridge Hospice LLC</h1>
+            <h2 className="text-center bg-primary text-white py-4">Privacy Policy of Bridge Hospice LLC</h2>
             <p>Bridge Hospice LLC operates the bridge-hospice.com website, which provides Services including by not limited: company information, volunteer and employement forms, contact information, and an online donation service.</p>
             <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the Bridge Hospice website.</p>
             <p>If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>

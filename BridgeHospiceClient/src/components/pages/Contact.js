@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact() {
   return (
     <div className="container shadow">
-      <br/>
+      <div style={{height: 10}}></div>
       <h2 className="text-center bg-primary text-white py-4">Contact Information</h2>
 
       <div className="row">

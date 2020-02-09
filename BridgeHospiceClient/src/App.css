@@ -11,7 +11,7 @@
 	color: var(--warning) !Important;
 }
 .anonymous {
-	color: var(--danger) !Important;
+	color: var(--primary) !Important;
 }
 .app {
   min-height: 100vh !Important;

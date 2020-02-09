@@ -9,10 +9,9 @@
 //@import "node_modules/bootstrap/scss/variables";
 
 /* make the customizations */
-$theme-colors: (
-    "primary": #11a781,
-    //"primary": #fd8546, 
-    //"secondary": #002856,
+$theme-colors: ( 
+    "primary": rgba(230, 108, 23, 1.0),
+    "secondary": #002856,
 );
 
 /* import bootstrap to set changes */

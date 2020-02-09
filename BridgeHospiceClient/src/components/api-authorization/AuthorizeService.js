@@ -1,5 +1,5 @@
 import { UserManager, WebStorageStateStore } from 'oidc-client';
-import { AppPaths, AppName } from '../common/Constants';
+import { ApplicationPaths, ApplicationName } from './ApiAuthorizationConstants';
 
 export class AuthorizeService {
     _callbacks = [];
@@ -47,9 +47,9 @@ export class AuthorizeService {
             this.updateState(silentUser);
             return this.success(state);
         } catch (silentError) {
-            //console.log("Silent authentication error: ", silentError);
-            //return this.redirect();
-            ///*
+            // User might not be authenticated, fallback to popup authentication
+            console.log("Silent authentication error: ", silentError);
+
             try {
                 if (this._popUpDisabled) {
                     throw new Error('Popup disabled. Change \'AuthorizeService.js:AuthorizeService._popupDisabled\' to false to enable it.')
@@ -68,14 +68,13 @@ export class AuthorizeService {
 
                 // PopUps might be blocked by the user, fallback to redirect
                 try {
-                    await this.userManager.signinRedirect(this.createArguments(state)); //error here
+                    await this.userManager.signinRedirect(this.createArguments(state));
                     return this.redirect();
                 } catch (redirectError) {
                     console.log("Redirect authentication error: ", redirectError);
                     return this.error(redirectError);
                 }
             }
-            //*/            
         }
     }
 
@@ -149,7 +148,7 @@ export class AuthorizeService {
             throw new Error(`Found an invalid number of subscriptions ${subscriptionIndex.length}`);
         }
 
-        this._callbacks = this._callbacks.splice(subscriptionIndex[0].index, 1);
+        this._callbacks.splice(subscriptionIndex[0].index, 1);
     }
 
     notifySubscribers() {
@@ -177,20 +176,19 @@ export class AuthorizeService {
 
     async ensureUserManagerInitialized() {
         if (this.userManager !== undefined) {
-            console.log("user manager is setup")
             return;
         }
 
-        let response = await fetch(AppPaths.Identity.ApiAuthorizationClientConfigurationUrl);
+        let response = await fetch(ApplicationPaths.ApiAuthorizationClientConfigurationUrl);
         if (!response.ok) {
-            throw new Error(`Could not load settings for '${AppName}'`);
+            throw new Error(`Could not load settings for '${ApplicationName}'`);
         }
 
         let settings = await response.json();
         settings.automaticSilentRenew = true;
         settings.includeIdTokenInSilentRenew = true;
         settings.userStore = new WebStorageStateStore({
-            prefix: AppName
+            prefix: ApplicationName
         });
 
         this.userManager = new UserManager(settings);

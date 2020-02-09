@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function TermsOfService() {
     return (
-        <div className="container shadow pb-3">
+        <div className="container shadow">
             <div style={{height: 10}}></div>
-            <h1 className="text-center bg-primary text-dark py-4">Terms Of Service of Bridge Hospice LLC</h1>
-            <h2>Welcome to Bridge Hospice LLC</h2>
+            <h2 className="text-center bg-primary text-white py-4">Terms Of Service of Bridge Hospice LLC</h2>
+            <h3>Welcome to Bridge Hospice LLC</h3>
             <p>These terms and conditions outline the rules and regulations for the use of Bridge Hospice LLC's Website.</p> <br /> 
             <span style={{textTransform: "capitalize"}}> Bridge Hospice LLC</span> is located at:<br /> 
             <address>8212 Ithaca Ave w2 Texas <br />79423 - Lubbock , United States<br /></address>

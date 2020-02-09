@@ -91,6 +91,9 @@ export const AppPaths = {
     },
     Veterans: {
         Index: "/Veterans"
+    },
+    Dashboard: {
+        Index: "/Dashboard"
     }
   },
 

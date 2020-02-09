@@ -51,13 +51,13 @@ export class Login extends Component {
         } else {
             switch (action) {
                 case LoginActions.Login:
-                    return (<div className="container shadow"><h3 className="text-center">Processing login</h3></div>);
+                    return (<div className="container shadow"><h3 className="text-center py-5">Processing login</h3></div>);
                 case LoginActions.LoginCallback:
-                    return (<div className="container shadow"><h3 className="text-center">Processing login callback</h3></div>);
+                    return (<div className="container shadow"><h3 className="text-center py-5">Processing login callback</h3></div>);
                 case LoginActions.Profile:
-                    return (<div className="container shadow"><h3 className="text-center">Processing profile</h3></div>);
+                    return (<div className="container shadow"><h3 className="text-center py-5">Processing profile</h3></div>);
                 case LoginActions.Register:
-                    return (<div className="container shadow"><h3 className="text-center">Processing registrations</h3></div>);
+                    return (<div className="container shadow"><h3 className="text-center py-5">Processing registrations</h3></div>);
                 default:
                     throw new Error(`Invalid action '${action}'`);
             }
@@ -69,8 +69,6 @@ export class Login extends Component {
         const result = await authService.signIn(state);
         switch (result.status) {
             case AuthenticationResultStatus.Redirect:
-                //change here
-                //this.navigateToReturnUrl(`${AppPaths.Pages.Account.Index}?${QueryParams.ReturnUrl}=${returnUrl}`);
                 break;
             case AuthenticationResultStatus.Success:
                 await this.navigateToReturnUrl(returnUrl);

@@ -13,6 +13,10 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
+
+
+//Archived
+
 //import express, { static } from 'express';
 //import { join } from 'path';
 //const app = express();

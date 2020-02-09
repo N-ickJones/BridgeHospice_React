@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react'
+import { Component } from 'react';
 import authService from './AuthorizeService';
 import { AuthenticationResultStatus } from './AuthorizeService';
-
-import { QueryParams, LogoutActions, AppPaths } from '../common/Constants';
+import { QueryParameterNames, LogoutActions, ApplicationPaths } from './ApiAuthorizationConstants';
 
 // The main responsibility of this component is to handle the user's logout process.
 // This is the starting point for the logout process, which is usually initiated when a
@@ -48,16 +48,16 @@ export class Logout extends Component {
             return <div></div>
         }
         if (!!message) {
-            return (<div className="container shadow"><h3 className="text-center">{message}</h3></div>);
+            return (<div>{message}</div>);
         } else {
             const action = this.props.action;
             switch (action) {
                 case LogoutActions.Logout:
-                    return (<div className="container shadow"><h3 className="text-center">Processing logout</h3></div>);
+                    return (<div>Processing logout</div>);
                 case LogoutActions.LogoutCallback:
-                    return (<div className="container shadow"><h3 className="text-center">Processing logout callback</h3></div>);
+                    return (<div>Processing logout callback</div>);
                 case LogoutActions.LoggedOut:
-                    return (<div className="container shadow"><h3 className="text-center">{message}</h3></div>);
+                    return (<div>{message}</div>);
                 default:
                     throw new Error(`Invalid action '${action}'`);
             }
@@ -112,14 +112,14 @@ export class Logout extends Component {
 
     getReturnUrl(state) {
         const params = new URLSearchParams(window.location.search);
-        const fromQuery = params.get(QueryParams.ReturnUrl);
+        const fromQuery = params.get(QueryParameterNames.ReturnUrl);
         if (fromQuery && !fromQuery.startsWith(`${window.location.origin}/`)) {
             // This is an extra check to prevent open redirects.
             throw new Error("Invalid return url. The return url needs to have the same origin as the current page.")
         }
         return (state && state.returnUrl) ||
             fromQuery ||
-            `${window.location.origin}${AppPaths.Identity.LoggedOut}`;
+            `${window.location.origin}${ApplicationPaths.LoggedOut}`;
     }
 
     navigateToReturnUrl(returnUrl) {

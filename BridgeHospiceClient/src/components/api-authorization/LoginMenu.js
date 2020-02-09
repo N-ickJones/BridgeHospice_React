@@ -17,12 +17,12 @@ export class LoginMenu extends Component {
     }
 
     componentDidMount() {
-        //this._subscription = authService.subscribe(() => this.populateState());
-        //this.populateState();
+        this._subscription = authService.subscribe(() => this.populateState());
+        this.populateState();
     }
 
     componentWillUnmount() {
-        //authService.unsubscribe(this._subscription);
+        authService.unsubscribe(this._subscription);
     }
 
     async populateState() {
@@ -39,8 +39,8 @@ export class LoginMenu extends Component {
         if (!isAuthenticated) { //AppPaths.Pages.Account.Index
             return (
                 <Fragment>
-                    <Link id="accountBtn" to={AppPaths.Identity.Login} className={this.props.className}>
-                        <FontAwesomeIcon icon='user-circle' className="anonymous" />
+                    <Link id="accountBtn" to={AppPaths.Identity.Login} {...this.props}>
+                    Account&nbsp;<FontAwesomeIcon icon='user' className="anonymous" />
                     </Link>
                 </Fragment>
             );
@@ -49,12 +49,12 @@ export class LoginMenu extends Component {
             return (
                 <Fragment>
                     <Dropdown alignRight>
-                        <Dropdown.Toggle variant="dark" id="accountBtn">
-                            <FontAwesomeIcon icon='user-circle' className="authenticated" />
+                        <Dropdown.Toggle id="accountBtn" {...this.props}>
+                        Account&nbsp;<FontAwesomeIcon icon='user-circle' className="authenticated" />
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Link to={AppPaths.Pages.Account.Dashboard.Index} className="dropdown-item">Dashboard</Link>
+                            <Link to={AppPaths.Pages.Dashboard.Index} className="dropdown-item">Dashboard</Link>
                             <Link to={AppPaths.Identity.Profile} className="dropdown-item">Settings</Link>
                             <Link to={logoutPath} className="dropdown-item">Logout</Link>
                         </Dropdown.Menu>
