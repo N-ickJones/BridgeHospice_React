@@ -34,7 +34,7 @@ namespace BridgeHospiceApi
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             
             services.AddIdentityServer(options => options.PublicOrigin = 
-                Environment.IsDevelopment() ? "https://localhost:5001" : "https://research.myvenv.club")
+                Environment.IsDevelopment() ? "https://localhost:5001" : "https://dev.bridge-hospice.com") //https://localhost:5001
                 .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
 
             services.AddAuthentication()
