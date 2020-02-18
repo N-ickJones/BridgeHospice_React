@@ -1,5 +1,9 @@
 /* Global */
 
+.testimonial {
+	border-bottom: 1px solid var(--secondary);
+}
+
 #searchSubmit {
 	color: var(--warning) !Important;
   }
