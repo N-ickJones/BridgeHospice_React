@@ -1,12 +1,45 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import VeteranBanner from '../../static/Veteran_Banner.jpg';
 
 export default function Veterans() {
+  const randomStart = getRandomInt(1);
+
+  const carouselRef = useRef(null);
+  const bannerRef = useRef(null);
+  const [state, setState] = useState({ width: 0, margin: 0 });
+  function handleResize() {
+    setState({ width: carouselRef.current.clientWidth/2, margin: -(bannerRef.current.clientHeight/2) });
+  }
+  useEffect(() => {
+    window.addEventListener('resize', handleResize());
+    handleResize();
+    return () => {
+      window.removeEventListener('resize', handleResize());
+    };
+  }, []);
+  
   return (
-    <div className="container shadow p-3">
+    <div className="container shadow p-3 rounded">
       <h1 className="text-center bg-secondary text-primary py-3 rounded">Veterans Portal</h1>
+
+      {/* Veteran Carousel */}
+      <div className="carousel slide" data-ride="carousel" ref={carouselRef}>
+        <div className="carousel-inner rounded">
+          <div className={getClass(1)} data-interval="20000">
+              <img src="https://via.placeholder.com/2592x1728" className="d-block w-100" alt="Customer Satisfaction Cascade 1" />
+          </div>
+        </div>
+      </div>
+
+      {/* Veteran Banner */}
+      <div className="text-center" style={{position: "relative", marginTop: state.margin}}>
+          <img onLoad={() => handleResize()} ref={bannerRef} src={VeteranBanner} className="img-fluid rounded" style={{maxWidth: "400px", width: state.width}} alt="On behalf of VALOR, the veterans division of bridge hospice, thank you for your service." />
+      </div>
+
+      {/* Testimonials */}
+      <hr />
       <div className="row p-3">
-        <div className="col-12 col-md my-auto">
+        <div className="col my-auto">
           <p className="">
             At Bridge Hospice, we have created a division named <b>VALOR</b> dedicated to our United States Veterans. 
             We believe that we owe our veterans a debt of gratitude for their service, both in war and in peacetime.
@@ -17,15 +50,12 @@ export default function Veterans() {
             It is our sincere honor to care for our United States Veterans.
           </p>
         </div>
-
-        <div className="col-12 col-md">
-          <img src={VeteranBanner} className="img-fluid rounded" alt="On behalf of VALOR, the veterans division of bridge hospice, thank you for your service." />
-        </div>
       </div>
+      <hr />
 
+      <p className="font-weight-bold">Note: Testimonials Will be Removed from Production until ready.</p>
       <div className="row p-3">
         <h2 className="col-12 text-center bg-secondary text-primary py-3 rounded">Testimonials</h2>
-
         <div className="row p-3 testimonial">
           <div className="col-12 col-md my-auto">
             <p className="">
@@ -81,9 +111,60 @@ export default function Veterans() {
         </div>
         <hr />
 
-        
       </div>
 
     </div>
   );
+
+  //Functions 
+  function getClass(position) {
+    if (position === randomStart) {
+      return "carousel-item active";
+    }
+    else {
+      return "carousel-item";
+    }
+  }
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max)) + 1;
+  }
+
+  /*
+  function useDimensionsById(ref) {
+    const [width, setWidth] = useState(0);
+    const [height, setHeight] = useState(0);
+    useEffect(() => {
+      async function handleInitalResize() {
+        setWidth(await getWidth());
+        setHeight(await getHeight());
+      }
+      function handleResize() {
+        setWidth(ref.current.offsetWidth);
+        setHeight(ref.current.offsetHeight);
+      }
+      function getHeight() { 
+        return new Promise(resolve => {
+          setTimeout(() => {
+            resolve(ref.current.offsetHeight);
+         }, 1);
+        });
+      }
+      function getWidth() { 
+        return new Promise(resolve => {
+          setTimeout(() => {
+            resolve(ref.current.offsetWidth);
+          }, 250);
+        });
+      }
+      handleInitalResize();
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    });
+    return [width, height];
+  }
+  */
+
 }

@@ -15,7 +15,7 @@ export default function Home() {
   const randomStart = getRandomInt(5);
   return (
     <div className="container shadow p-0">
-      <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
+      <div className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
           <div className={getClass(1)} data-interval="20000">
               <img src={Banner1} className="d-block w-100" alt="Customer Satisfaction Cascade 1" />

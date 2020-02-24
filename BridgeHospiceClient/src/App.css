@@ -1,5 +1,10 @@
 /* Global */
 
+.veteran-banner {
+	position: relative;
+	margin-top: calc(height / 2) !important;
+}
+
 .testimonial {
 	border-bottom: 1px solid var(--secondary);
 }
@@ -65,8 +70,6 @@
       padding-left: .5rem !Important;
   }
 }
-
-
 
 /* toggle switch*/
 .switch {
