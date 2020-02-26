@@ -11,6 +11,7 @@ import Logo from '../../static/BridgeHospiceLogo.png';
 import Valor from '../../static/Valor.png';
 import DavesWish from '../../static/DavesWish.png';
 
+
 export default function Home() {
   const randomStart = getRandomInt(5);
   return (
@@ -34,10 +35,10 @@ export default function Home() {
           </div>
         </div>
       
-        <div className="text-center hero-container">
+        <div className="text-center hero-container" style={{marginBottom: "-15%"}}>
           <Link to={AppPaths.Pages.Contact.Index} className="hover-dim" title="Click here for contact information">
-            <p className="text-light hero-font mb-1"><span className="bg bg-secondary-opaque px-2 rounded">EXTENDING LOVE, COMFORT, AND CARE</span></p>
-            <img src={Logo} className="img-fluid hero-image" alt="Bridge Hospice" />
+            <p className="text-light hero-caption mb-1"><span className="bg bg-secondary-opaque px-2 rounded">EXTENDING LOVE, COMFORT, AND CARE</span></p>
+            <img src={Logo} className="img-fluid hero-image-with-caption" alt="Bridge Hospice" />
           </Link>
         </div>
 

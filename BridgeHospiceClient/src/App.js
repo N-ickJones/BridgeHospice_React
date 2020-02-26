@@ -34,7 +34,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <div className="app bg-light pb-4" style={{"minWidth": "237px"}}>
+      <div className="app bg-light pb-4" style={{"minWidth": "240px"}}>
       
       <MyNavbar />
       {/*acceptedTerms == null && (

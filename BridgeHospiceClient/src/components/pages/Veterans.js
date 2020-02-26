@@ -1,39 +1,37 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React from 'react';
 import VeteranBanner from '../../static/Veteran_Banner.jpg';
 
 export default function Veterans() {
-  const randomStart = getRandomInt(1);
-
-  const carouselRef = useRef(null);
-  const bannerRef = useRef(null);
-  const [state, setState] = useState({ width: 0, margin: 0 });
-  function handleResize() {
-    setState({ width: carouselRef.current.clientWidth/2, margin: -(bannerRef.current.clientHeight/2) });
-  }
-  useEffect(() => {
-    window.addEventListener('resize', handleResize());
-    handleResize();
-    return () => {
-      window.removeEventListener('resize', handleResize());
-    };
-  }, []);
+  const randomStart = getRandomInt(5);
   
   return (
     <div className="container shadow p-3 rounded">
-      <h1 className="text-center bg-secondary text-primary py-3 rounded">Veterans Portal</h1>
+      <h2 className="text-center bg-secondary text-primary py-3 rounded">Veterans Portal</h2>
 
       {/* Veteran Carousel */}
-      <div className="carousel slide" data-ride="carousel" ref={carouselRef}>
+      <div className="carousel slide" data-ride="carousel">
         <div className="carousel-inner rounded">
           <div className={getClass(1)} data-interval="20000">
-              <img src="https://via.placeholder.com/2592x1728" className="d-block w-100" alt="Customer Satisfaction Cascade 1" />
+              <img src="https://via.placeholder.com/2592x1728" className="d-block w-100" alt="Customer Satisfaction Cascade 1" style={{border: "1px solid black"}} />
+          </div>
+          <div className={getClass(2)} data-interval="20000">
+              <img src="https://via.placeholder.com/2592x1728" className="d-block w-100" alt="Customer Satisfaction Cascade 1" style={{border: "1px solid orange"}} />
+          </div>
+          <div className={getClass(3)} data-interval="20000">
+              <img src="https://via.placeholder.com/2592x1728" className="d-block w-100" alt="Customer Satisfaction Cascade 1" style={{border: "1px solid blue"}} />
+          </div>
+          <div className={getClass(4)} data-interval="20000">
+              <img src="https://via.placeholder.com/2592x1728" className="d-block w-100" alt="Customer Satisfaction Cascade 1" style={{border: "1px solid yellow"}} />
+          </div>
+          <div className={getClass(5)} data-interval="20000">
+              <img src="https://via.placeholder.com/2592x1728" className="d-block w-100" alt="Customer Satisfaction Cascade 1" style={{border: "1px solid red"}} />
           </div>
         </div>
       </div>
 
       {/* Veteran Banner */}
-      <div className="text-center" style={{position: "relative", marginTop: state.margin}}>
-          <img onLoad={() => handleResize()} ref={bannerRef} src={VeteranBanner} className="img-fluid rounded" style={{maxWidth: "400px", width: state.width}} alt="On behalf of VALOR, the veterans division of bridge hospice, thank you for your service." />
+      <div className="text-center hero-container" style={{marginBottom: "-15%"}}>
+          <img src={VeteranBanner} className="img-fluid rounded hero-image" alt="On behalf of VALOR, the veterans division of bridge hospice, thank you for your service." />
       </div>
 
       {/* Testimonials */}

@@ -1,10 +1,5 @@
 /* Global */
 
-.veteran-banner {
-	position: relative;
-	margin-top: calc(height / 2) !important;
-}
-
 .testimonial {
 	border-bottom: 1px solid var(--secondary);
 }
@@ -303,64 +298,85 @@
 	opacity:0.8;
 }
 
+
+
 .hero-container {
-	margin-top: -140px;
 	position: relative;
-}
-.hero-font {
-	font-size: 40px !important;
+	width: 100%;
+	overflow: visible;
 }
 .hero-image {
-	width: 300px;
+	width: 40%;
+	transform: translate(0, -35%);
 }
 
+
+/* Home Page */
+.hero-image-with-caption {
+	width: 40%;
+	transform: translate(0, -50%);
+}
+.hero-caption {
+	transform: translate(0, -350%);
+	font-size: 40px !important;
+}
+@media (max-width: 1200px) {
+	.hero-image-with-caption {
+		width: 40%;
+		transform: translate(0, -50%);
+	}
+	.hero-caption {
+		transform: translate(0, -350%);
+		font-size: 35px !important;
+	}
+}
 @media (max-width: 1000px) {
-	.hero-font { 
+	.hero-image-with-caption {
+		width: 40%;
+		transform: translate(0, -52%);
+	}
+	.hero-caption {
+		transform: translate(0, -300%);
 		font-size: 30px !important;
 	}
-
-
 }
-
 @media (max-width: 768px) {
-	.hero-container {
-		margin-top: -100px;
-		position: relative;
+	.hero-image-with-caption {
+		width: 40%;
+		transform: translate(0, -51%);
 	}
-	.hero-font {
+	.hero-caption {
+		transform: translate(0, -330%);
 		font-size: 20px !important;
-	}
-	.hero-image {
-		width: 200px;
 	}
 }
 @media (max-width: 445px) {
-	.hero-container {
-		margin-top: -75px;
-		position: relative;
+	.hero-image-with-caption {
+		width: 40%;
+		transform: translate(0, -51%);
 	}
-	.hero-font {
+	.hero-caption {
+		transform: translate(0, -375%);
 		font-size: 15px !important;
-	}
-	.hero-image {
-		width: 150px;
 	}
 }
 @media (max-width: 335px) {
-	.hero-container {
-		margin-top: -60px;
-		position: relative;
+	.hero-image-with-caption {
+		width: 40%;
+		transform: translate(0, -53%);
 	}
-	.hero-font {
+	.hero-caption {
+		transform: translate(0, -375%);
 		font-size: 12px !important;
 	}
-	.hero-image {
-		width: 120px;
-	}
 }
-
 @media (max-width: 261px) {
-	.hero-font {
+	.hero-image-with-caption {
+		width: 40%;
+		transform: translate(0, -53%);
+	}
+	.hero-caption {
+		transform: translate(0, -300%);
 		font-size: 11px !important;
 	}
 }
