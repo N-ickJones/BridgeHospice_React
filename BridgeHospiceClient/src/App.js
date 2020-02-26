@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route, useLocation } from 'react-router-dom';
 
 import MyNavbar from './components/Navbar';
 import Home from './components/pages/Home';
@@ -35,7 +35,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="app bg-light pb-4" style={{"minWidth": "240px"}}>
-      
+      <ScrollToTop />
       <MyNavbar />
       {/*acceptedTerms == null && (
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -79,11 +79,20 @@ export default function App() {
     </BrowserRouter>
   );
 
-  //function handleLegalAlert() {
-  //  localStorage.setItem("acceptTerms", "The user has dismissed the Terms of Service and Privacy Notice alert indicating that is aware and accepted that Terms of Service and usage of personal information to improve our service.");
-  //}
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
+  
 }
 
-
+//function handleLegalAlert() {
+  //  localStorage.setItem("acceptTerms", "The user has dismissed the Terms of Service and Privacy Notice alert indicating that is aware and accepted that Terms of Service and usage of personal information to improve our service.");
+  //}
 //import Account from './components/account/Index';
 //<Route path={AppPaths.Pages.Account.Index} component={Account} />

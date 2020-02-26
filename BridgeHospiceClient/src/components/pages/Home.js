@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="container shadow p-0">
       <div className="carousel slide" data-ride="carousel">
-        <div className="carousel-inner">
+        <div className="carousel-inner rounded">
           <div className={getClass(1)} data-interval="20000">
               <img src={Banner1} className="d-block w-100" alt="Customer Satisfaction Cascade 1" />
           </div>
@@ -42,7 +42,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="bg-orange nav-box mt-3 py-4 px-3 d-flex align-items-center">
+        <div className="bg-orange nav-box mt-3 py-4 px-3 d-flex align-items-center rounded">
           <div className="text-center text-light">
             <p style={{fontSize: "24px"}}>In 2019 the Founder and Administrator of BRIDGE Hospice, Tammie Ware, discovered herself wanting 
               more out of the hospice experience for the patient and family. She put together a team of individuals
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-purple nav-box d-flex p-3 text-light">
+        <div className="bg-purple nav-box d-flex p-3 text-light rounded">
           <div className="row m-auto w-100 py-3">
               <div className="col-12 col-md-4 col-lg-5 text-center my-auto pb-2" style={{lineHeight: 1.0}}>
                 <div style={{fontSize: "70px", fontWeight: "500"}}>5</div>
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-cyan nav-box py-3 px-3 text-light"  style={{fontSize: "24px"}}>
+        <div className="bg-cyan nav-box py-3 px-3 text-light rounded"  style={{fontSize: "24px"}}>
           <h2 className="text-center py-2">Our Services</h2>
           <div className="row">
             <div className="col-12 col-md">
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-valorblue nav-box py-5 px-3">
+        <div className="bg-valorblue nav-box py-5 px-3 rounded">
           <Link to={AppPaths.Pages.Veterans.Index} title="Click here for information on our veteran services">
             <div className="row hover-dim">
               <img src={Valor} alt="Valor" className="mx-auto ml-lg-auto mr-lg-0 h-100" />
@@ -125,9 +125,9 @@ export default function Home() {
           </Link>
         </div>
 
-        <div id="daves-wishes" className="bg-yellow nav-box py-3 px-3 text-center d-flex">
+        <div id="daves-wishes" className="bg-yellow nav-box py-3 px-3 text-center d-flex rounded">
           <Link to={AppPaths.Pages.Donations.Index} className="m-auto hover-dim" title="Click here to make a donation">
-            <img src={DavesWish} alt="Dave's Wish" className="img-fluid" />
+            <img src={DavesWish} alt="Dave's Wish" className="img-fluid rounded" />
           </Link>
         </div>
 
