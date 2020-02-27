@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter, Switch, Route, useLocation } from 'react-router-dom';
 
@@ -14,6 +15,10 @@ import Veterans from './components/pages/Veterans';
 import Donations from './components/pages/Donations';
 import Dashboard from './components/pages/Dashboard';
 import Help from './components/pages/Help';
+
+import Instagram from './components/pages/Instagram';
+import Facebook from './components/pages/Facebook';
+import Twitter from './components/pages/Twitter';
 
 //import Bereavement from './components/pages/Bereavement';
 //import Employment from './components/pages/Employment';
@@ -29,6 +34,7 @@ import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizat
 import { AppPaths } from './components/common/Constants';
 
 export default function App() {
+  library.add(fab);
   library.add(fas);
   //let acceptedTerms = localStorage.getItem("acceptTerms");
 
@@ -59,6 +65,10 @@ export default function App() {
         <Route exact path={AppPaths.Pages.Veterans.Index} component={Veterans} />
         <Route exact path={AppPaths.Pages.Dashboard.Index} component={Dashboard} />
         <Route exact path={AppPaths.Pages.Help.Index} component={Help} />
+
+        <Route exact path={AppPaths.Pages.Instagram.Index} component={Instagram} />
+        <Route exact path={AppPaths.Pages.Facebook.Index} component={Facebook} />
+        <Route exact path={AppPaths.Pages.Twitter.Index} component={Twitter} />
 
         {/*<Route exact path={AppPaths.Pages.Bereavement.Index} component={Bereavement} />*/}
         {/*<Route exact path={AppPaths.Pages.Employment.Index} component={Employment} />*/}

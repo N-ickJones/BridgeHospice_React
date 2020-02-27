@@ -1,7 +1,8 @@
 import React from 'react'; //, { useState }
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Dropdown } from 'react-bootstrap'; //FormControl,
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { LoginMenu } from './api-authorization/LoginMenu';
 import { AppPaths } from './common/Constants';
 import BrandImage from '../favicon.ico';
@@ -51,7 +52,22 @@ export default function MyNavbar() {
               <FontAwesomeIcon icon="shopping-cart" className="text-primary" />
             </Link>
             */}
+            
+            <Link to={AppPaths.Pages.Twitter.Index} className={`btn btn-${background} navBtn`}>
+              <FontAwesomeIcon icon={faTwitter} className="text-primary" />
+            </Link>
+            <Link to={AppPaths.Pages.Instagram.Index} className={`btn btn-${background} navBtn`}>
+              <FontAwesomeIcon icon={faInstagram} className="text-primary" />
+            </Link>
+            <Link to={AppPaths.Pages.Facebook.Index} className={`btn btn-${background} navBtn`}>
+              <FontAwesomeIcon icon={faFacebook} className="text-primary" />
+            </Link>
+            
+            
+
             <LoginMenu className={`btn btn-${'secondary'}`} title="Account" />
+            
+            
 
           </span>
           

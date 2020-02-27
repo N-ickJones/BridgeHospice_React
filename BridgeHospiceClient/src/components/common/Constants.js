@@ -41,6 +41,15 @@ export const AppPaths = {
   },
 
   Pages: {
+    Instagram: {
+        Index: "/Instagram"
+    },
+    Facebook: {
+        Index: "/Facebook"
+    },
+    Twitter: {
+        Index: "/Twitter"
+    },
     Cart: {
         Index: "/Cart",
     },
